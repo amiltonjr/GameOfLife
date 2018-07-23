@@ -1,0 +1,3 @@
+all:
+	clear
+	gcc -g -Wall -o game_omp game_omp.c -fopenmp

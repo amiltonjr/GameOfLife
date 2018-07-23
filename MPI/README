@@ -1,0 +1,11 @@
+File:    game_mpi.c
+Purpose: Run the Game of Life on a single thread.
+Compile: mpicc -o game_mpi game_mpi.c -std=gnu99
+Run:     mpirun -np <number of processes> game_mpi  <board size> <generations>
+Input:   None
+Output:  Resultant generation, number of alive cells, and time spent doing calculations.
+
+Notes:
+ 1.  Time given in seconds.
+ 2.  Limited number of threads allowed.
+ 3.  The bigger the grid, the bigger the space required in memory.
